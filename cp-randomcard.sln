@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cp-randomcard", "cp-randomcard\cp-randomcard.csproj", "{82459893-AEB3-4A08-AC8F-4E9E81FBC89A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82459893-AEB3-4A08-AC8F-4E9E81FBC89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82459893-AEB3-4A08-AC8F-4E9E81FBC89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82459893-AEB3-4A08-AC8F-4E9E81FBC89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82459893-AEB3-4A08-AC8F-4E9E81FBC89A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {606DB830-E0BE-491C-8EB7-3C505EAD3F99}
+	EndGlobalSection
+EndGlobal

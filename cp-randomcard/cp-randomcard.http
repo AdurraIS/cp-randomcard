@@ -1,0 +1,6 @@
+@cp_randomcard_HostAddress = http://localhost:5200
+
+GET {{cp_randomcard_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
