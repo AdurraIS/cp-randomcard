@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
-using cp_randomcard.Data;
+using cp_randomcard.Infra.Data;
 
 #nullable disable
 
@@ -26,31 +26,53 @@ namespace cp_randomcard.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER")
-                        .HasColumnName("CARD_ID");
+                        .HasColumnName("USER_ID");
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Atribute")
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(255)")
-                        .HasColumnName("CARD_ATRIBUTE");
+                        .HasColumnName("USER_PASSWORD");
 
                     b.Property<int>("Health")
                         .HasColumnType("INTEGER")
                         .HasColumnName("CARD_HEALTH");
 
                     b.Property<int>("Power")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("CARD_POWER");
+                        .HasColumnType("BOOLEAN")
+                        .HasColumnName("USER_ISACTIVE");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(255)")
-                        .HasColumnName("CARD_TITLE");
+                        .HasColumnName("USER_USERNAME");
 
                     b.HasKey("Id");
 
                     b.ToTable("CARD", (string)null);
+                });
+
+            modelBuilder.Entity("cp_randomcard.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("NUMBER(10)");
+
+                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("BOOLEAN");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("NVARCHAR2(2000)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("USER", (string)null);
                 });
 #pragma warning restore 612, 618
         }

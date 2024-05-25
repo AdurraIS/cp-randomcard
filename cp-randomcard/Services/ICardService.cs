@@ -1,5 +1,4 @@
-﻿
-using cp_randomcard.DTOs;
+﻿using cp_randomcard.Models.DTOs;
 
 namespace cp_randomcard.Services
 {

@@ -1,7 +1,7 @@
-﻿using cp_randomcard.DTOs;
+﻿
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
+
 
 namespace cp_randomcard.Entities
 {

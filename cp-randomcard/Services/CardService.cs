@@ -1,6 +1,6 @@
-﻿using cp_randomcard.Data;
-using cp_randomcard.DTOs;
-using cp_randomcard.Entities;
+﻿using cp_randomcard.Entities;
+using cp_randomcard.Infra.Data;
+using cp_randomcard.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
